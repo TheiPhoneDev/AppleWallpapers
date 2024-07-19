@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<caml xmlns="http://www.apple.com/CoreAnimation/1.0">
+  <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 3890 3890" contentsFormat="RGBA8" geometryFlipped="1" hidden="0" name="_BACKGROUND" position="2000 2000">
+    <sublayers>
+      <CALayer id="#1" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" anchorPoint="0 0" bounds="0 0 0 0" contentsFormat="RGBA8" geometryFlipped="1" name="_CENTER_BACKGROUND" position="1945 1945">
+	<sublayers>
+	  <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 3416 3416" contentsFormat="RGBA8" name="J99-Flat.HEIC" position="0 -4.547473508865e-13">
+	    <contents type="CGImage" relativePath="/assets/J99-Flat.HEIC" src="assets/J99-Flat.HEIC"/>
+	  </CALayer>
+	</sublayers>
+      </CALayer>
+    </sublayers>
+    <modules/>
+    <states>
+      <LKState name="Sleep PortraitUp">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.rotation.z">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Lock PortraitUp">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.rotation.z">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Home PortraitUp">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.rotation.z">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Sleep LandscapeLeft">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.rotation.z">
+	    <value type="real" value="1.5708"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Lock LandscapeLeft">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.rotation.z">
+	    <value type="real" value="1.5708"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Home LandscapeLeft">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.rotation.z">
+	    <value type="real" value="1.5708"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Sleep PortraitDown">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.rotation.z">
+	    <value type="real" value="3.14159"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Lock PortraitDown">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.rotation.z">
+	    <value type="real" value="3.14159"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Home PortraitDown">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.rotation.z">
+	    <value type="real" value="3.14159"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Sleep LandscapeRight">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.rotation.z">
+	    <value type="real" value="-1.5708"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Lock LandscapeRight">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.rotation.z">
+	    <value type="real" value="-1.5708"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Home LandscapeRight">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.rotation.z">
+	    <value type="real" value="-1.5708"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+    </states>
+    <stateTransitions>
+      <LKStateTransition fromState="*" toState="Sleep PortraitUp">
+	<elements>
+	  <LKStateTransitionElement id="#2" key="transform.rotation.z" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" mica_autorecalculatesDuration="1" keyPath="transform.rotation.z" duration="2.4" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Sleep PortraitUp" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#2"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Lock PortraitUp">
+	<elements>
+	  <LKStateTransitionElement id="#3" key="transform.rotation.z" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" mica_autorecalculatesDuration="1" keyPath="transform.rotation.z" duration="2.4" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Lock PortraitUp" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#3"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Home PortraitUp">
+	<elements>
+	  <LKStateTransitionElement id="#4" key="transform.rotation.z" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" mica_autorecalculatesDuration="1" keyPath="transform.rotation.z" duration="2.4" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Home PortraitUp" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#4"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Sleep LandscapeLeft">
+	<elements>
+	  <LKStateTransitionElement id="#5" key="transform.rotation.z" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" mica_autorecalculatesDuration="1" keyPath="transform.rotation.z" duration="2.4" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Sleep LandscapeLeft" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#5"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Lock LandscapeLeft">
+	<elements>
+	  <LKStateTransitionElement id="#6" key="transform.rotation.z" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" mica_autorecalculatesDuration="1" keyPath="transform.rotation.z" duration="2.4" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Lock LandscapeLeft" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#6"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Home LandscapeLeft">
+	<elements>
+	  <LKStateTransitionElement id="#7" key="transform.rotation.z" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" mica_autorecalculatesDuration="1" keyPath="transform.rotation.z" duration="2.4" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Home LandscapeLeft" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#7"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Sleep PortraitDown">
+	<elements>
+	  <LKStateTransitionElement id="#8" key="transform.rotation.z" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" mica_autorecalculatesDuration="1" keyPath="transform.rotation.z" duration="2.4" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Sleep PortraitDown" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#8"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Lock PortraitDown">
+	<elements>
+	  <LKStateTransitionElement id="#9" key="transform.rotation.z" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" mica_autorecalculatesDuration="1" keyPath="transform.rotation.z" duration="2.4" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Lock PortraitDown" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#9"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Home PortraitDown">
+	<elements>
+	  <LKStateTransitionElement id="#10" key="transform.rotation.z" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" mica_autorecalculatesDuration="1" keyPath="transform.rotation.z" duration="2.4" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Home PortraitDown" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#10"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Sleep LandscapeRight">
+	<elements>
+	  <LKStateTransitionElement id="#11" key="transform.rotation.z" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" mica_autorecalculatesDuration="1" keyPath="transform.rotation.z" duration="2.4" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Sleep LandscapeRight" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#11"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Lock LandscapeRight">
+	<elements>
+	  <LKStateTransitionElement id="#12" key="transform.rotation.z" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" mica_autorecalculatesDuration="1" keyPath="transform.rotation.z" duration="2.4" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Lock LandscapeRight" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#12"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Home LandscapeRight">
+	<elements>
+	  <LKStateTransitionElement id="#13" key="transform.rotation.z" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" mica_autorecalculatesDuration="1" keyPath="transform.rotation.z" duration="2.4" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Home LandscapeRight" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#13"/>
+	</elements>
+      </LKStateTransition>
+    </stateTransitions>
+  </CALayer>
+</caml>
