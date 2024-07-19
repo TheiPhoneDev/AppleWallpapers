@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<caml xmlns="http://www.apple.com/CoreAnimation/1.0">
+  <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 393 852" contentsFormat="RGBA8" geometryFlipped="1" hidden="0" name="Root Layer" position="196.5 426">
+    <sublayers>
+      <CALayer id="Floating" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" anchorPoint="0 0" bounds="0 0 393 852" contentsFormat="RGBA8" geometryFlipped="0" hidden="0" name="Floating" position="0 0">
+	<sublayers>
+	  <CALayer id="#3" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 390 844" contentsFormat="RGBA8" hidden="0" name="Overall Scale" position="196.5 426" transform="scale(1.00769, 1.00769, 1)">
+	    <filters>
+	      <CAFilter filter="colorMatrix" name="colorMatrix" inputColorMatrix="matrix(1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0)"/>
+	    </filters>
+	    <sublayers>
+	      <CALayer id="#1" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 5 520 563" contentsFormat="RGBA8" hidden="0" name="Arm Animations" position="195 365" transform="">
+		<sublayers>
+		  <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 520 520.3333" contentsFormat="RGBA8" hidden="0" name="Arm.HEIC" position="260 259.5">
+		    <contents type="CGImage" src="assets/Arm.HEIC"/>
+		  </CALayer>
+		</sublayers>
+	      </CALayer>
+	    </sublayers>
+	  </CALayer>
+	</sublayers>
+      </CALayer>
+    </sublayers>
+    <scriptComponents/>
+    <states>
+      <LKState name="Locked">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.scale.xy">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#1" keyPath="transform.translation.y">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="Floating" keyPath="filters.colorMatrix.inputColorMatrix">
+	    <value type="CAColorMatrix" value="matrix(1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0)"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="filters.colorMatrix.inputColorMatrix">
+	    <value type="CAColorMatrix" value="matrix(1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0)"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#1" keyPath="transform.translation.x">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Unlock">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.scale.xy">
+	    <value type="real" value="0.91"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#1" keyPath="transform.translation.y">
+	    <value type="real" value="8.3"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="Floating" keyPath="filters.colorMatrix.inputColorMatrix">
+	    <value type="CAColorMatrix" value="matrix(1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0)"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="filters.colorMatrix.inputColorMatrix">
+	    <value type="CAColorMatrix" value="matrix(1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0)"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#1" keyPath="transform.translation.x">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Sleep">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="transform.translation.x">
+	    <value type="integer" value="28"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#1" keyPath="transform.translation.y">
+	    <value type="integer" value="3"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="Floating" keyPath="filters.colorMatrix.inputColorMatrix">
+	    <value type="CAColorMatrix" value="matrix(0.106 0.358 0.036 0 -0.071 0.106 0.358 0.036 0 -0.072 0.106 0.358 0.036 0 0.928 0 0 0 1 0)"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#1" keyPath="transform.scale.xy">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="filters.colorMatrix.inputColorMatrix">
+	    <value type="CAColorMatrix" value="matrix(0.429 -0.072 -0.007 0 0 -0.021 0.378 -0.007 0 0 -0.021 -0.072 0.443 0 0 0 0 0 1 0)"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+    </states>
+    <stateTransitions>
+      <LKStateTransition fromState="*" toState="Unlock">
+	<elements>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.scale.xy" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.translation.y" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.translation.y" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.colorMatrix.inputColorMatrix" targetId="Floating">
+	    <animation type="CABasicAnimation" keyPath="filters.colorMatrix.inputColorMatrix" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.colorMatrix.inputColorMatrix" targetId="#3">
+	    <animation type="CABasicAnimation" keyPath="filters.colorMatrix.inputColorMatrix" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.translation.x" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.translation.x" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Unlock" toState="*">
+	<elements>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.scale.xy" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.translation.y" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.translation.y" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.colorMatrix.inputColorMatrix" targetId="Floating">
+	    <animation type="CABasicAnimation" keyPath="filters.colorMatrix.inputColorMatrix" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.colorMatrix.inputColorMatrix" targetId="#3">
+	    <animation type="CABasicAnimation" keyPath="filters.colorMatrix.inputColorMatrix" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.translation.x" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.translation.x" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Locked">
+	<elements>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.scale.xy" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.translation.y" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.translation.y" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.colorMatrix.inputColorMatrix" targetId="Floating">
+	    <animation type="CABasicAnimation" keyPath="filters.colorMatrix.inputColorMatrix" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.colorMatrix.inputColorMatrix" targetId="#3">
+	    <animation type="CABasicAnimation" keyPath="filters.colorMatrix.inputColorMatrix" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.translation.x" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.translation.x" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Locked" toState="*">
+	<elements>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.scale.xy" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.translation.y" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.translation.y" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.colorMatrix.inputColorMatrix" targetId="Floating">
+	    <animation type="CABasicAnimation" keyPath="filters.colorMatrix.inputColorMatrix" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.colorMatrix.inputColorMatrix" targetId="#3">
+	    <animation type="CABasicAnimation" keyPath="filters.colorMatrix.inputColorMatrix" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.translation.x" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.translation.x" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Sleep">
+	<elements>
+	  <LKStateTransitionElement key="transform.translation.y" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.translation.y" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.translation.x" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.translation.x" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.colorMatrix.inputColorMatrix" targetId="Floating">
+	    <animation type="CABasicAnimation" keyPath="filters.colorMatrix.inputColorMatrix" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.colorMatrix.inputColorMatrix" targetId="#3">
+	    <animation type="CABasicAnimation" keyPath="filters.colorMatrix.inputColorMatrix" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.scale.xy" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Sleep" toState="*">
+	<elements>
+	  <LKStateTransitionElement key="transform.translation.y" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.translation.y" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.translation.x" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.translation.x" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.colorMatrix.inputColorMatrix" targetId="Floating">
+	    <animation type="CABasicAnimation" keyPath="filters.colorMatrix.inputColorMatrix" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="filters.colorMatrix.inputColorMatrix" targetId="#3">
+	    <animation type="CABasicAnimation" keyPath="filters.colorMatrix.inputColorMatrix" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.scale.xy" targetId="#1">
+	    <animation type="CABasicAnimation" keyPath="transform.scale.xy" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+    </stateTransitions>
+  </CALayer>
+</caml>

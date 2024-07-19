@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<caml xmlns="http://www.apple.com/CoreAnimation/1.0">
+  <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 393 852" contentsFormat="RGBA8" geometryFlipped="1" hidden="0" name="Root Layer" position="196.5 426">
+    <backgroundColor opacity="0" value="1 0 1"/>
+    <sublayers>
+      <CALayer id="Background" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" anchorPoint="0 0" bounds="0 0 393 852" contentsFormat="RGBA8" geometryFlipped="0" hidden="0" name="Background" position="0 0">
+	<sublayers>
+	  <CALayer id="#1" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 -75.52 2300 4400" contentsFormat="RGBA8" hidden="0" name="_Background_Transforms" position="196.5 426" sublayerTransform="" transform="scale(0.221692, 0.221692, 1)">
+	    <sublayers>
+	      <CALayer id="#2" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" anchorPoint="0 0" bounds="0 0 2300 3020" contentsFormat="RGBA8" contentsMultiplyColor="1 1 1" hidden="0" name="Background.HEIC" position="0 0" transform="translate(0, 15, 0)" zPosition="2">
+		<contents type="CGImage" src="assets/Background.HEIC"/>
+	      </CALayer>
+	    </sublayers>
+	  </CALayer>
+	</sublayers>
+      </CALayer>
+    </sublayers>
+    <eventHandlers>
+      <LKEventHandler eventType="mouseup" action="nextState"/>
+      <LKEventHandler eventType="volupbuttonpressed" action="previousState"/>
+      <LKEventHandler eventType="dblclick" action="gotoState" actionValue="Unlock"/>
+    </eventHandlers>
+        <scriptComponents/>
+    <states>
+      <LKState name="Unlock">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="sublayerTransform">
+	    <value type="CATransform3D" value=""/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="transform.translation.y">
+	    <value type="integer" value="-75"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="contentsMultiplyColor">
+	    <value type="CGColor" value="1 1 1"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Locked">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="sublayerTransform">
+	    <value type="CATransform3D" value=""/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="transform.translation.y">
+	    <value type="integer" value="15"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="contentsMultiplyColor">
+	    <value type="CGColor" value="1 1 1"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Sleep">
+	<elements>
+	  <LKStateSetValue targetId="#2" keyPath="transform.translation.y">
+	    <value type="integer" value="15"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#1" keyPath="sublayerTransform">
+	    <value type="CATransform3D" value="perspective(-100)"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="contentsMultiplyColor">
+	    <value type="CGColor" value="0.4 0.4 0.4"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+    </states>
+    <stateTransitions>
+      <LKStateTransition fromState="*" toState="Locked">
+	<elements>
+	  <LKStateTransitionElement key="sublayerTransform" targetId="#1">
+	    <animation type="CASpringAnimation" damping="1000" mass="1" stiffness="100" mica_autorecalculatesDuration="1" keyPath="sublayerTransform" duration="1" fillMode="backwards">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.translation.y" targetId="#2">
+	    <animation type="CASpringAnimation" damping="1000" mass="1" stiffness="100" mica_autorecalculatesDuration="1" keyPath="transform.translation.y" duration="1" fillMode="backwards">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="contentsMultiplyColor" targetId="#2">
+	    <animation type="CABasicAnimation" keyPath="contentsMultiplyColor" duration="1" fillMode="backwards"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Locked" toState="*">
+	<elements>
+	  <LKStateTransitionElement key="sublayerTransform" targetId="#1">
+	    <animation type="CASpringAnimation" damping="1000" mass="1" stiffness="100" mica_autorecalculatesDuration="1" keyPath="sublayerTransform" duration="1" fillMode="backwards">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.translation.y" targetId="#2">
+	    <animation type="CASpringAnimation" damping="1000" mass="1" stiffness="100" mica_autorecalculatesDuration="1" keyPath="transform.translation.y" duration="1" fillMode="backwards">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="contentsMultiplyColor" targetId="#2">
+	    <animation type="CASpringAnimation" damping="1000" mass="1" stiffness="100" mica_autorecalculatesDuration="1" keyPath="contentsMultiplyColor" duration="1" fillMode="backwards">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Unlock">
+	<elements>
+	  <LKStateTransitionElement key="sublayerTransform" targetId="#1">
+	    <animation type="CASpringAnimation" damping="1000" mass="1" stiffness="100" mica_autorecalculatesDuration="1" keyPath="sublayerTransform" duration="1" fillMode="backwards">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.translation.y" targetId="#2">
+	    <animation type="CASpringAnimation" damping="1000" mass="1" stiffness="100" mica_autorecalculatesDuration="1" keyPath="transform.translation.y" duration="1" fillMode="backwards">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="contentsMultiplyColor" targetId="#2">
+	    <animation type="CASpringAnimation" damping="1000" mass="1" stiffness="100" mica_autorecalculatesDuration="1" keyPath="contentsMultiplyColor" duration="1" fillMode="backwards">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Unlock" toState="*">
+	<elements>
+	  <LKStateTransitionElement key="sublayerTransform" targetId="#1">
+	    <animation type="CASpringAnimation" damping="1000" mass="1" stiffness="100" mica_autorecalculatesDuration="1" keyPath="sublayerTransform" duration="1" fillMode="backwards">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.translation.y" targetId="#2">
+	    <animation type="CASpringAnimation" damping="1000" mass="1" stiffness="100" mica_autorecalculatesDuration="1" keyPath="transform.translation.y" duration="1" fillMode="backwards">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="contentsMultiplyColor" targetId="#2">
+	    <animation type="CASpringAnimation" damping="1000" mass="1" stiffness="100" mica_autorecalculatesDuration="1" keyPath="contentsMultiplyColor" duration="1" fillMode="backwards">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Sleep">
+	<elements>
+	  <LKStateTransitionElement key="sublayerTransform" targetId="#1">
+	    <animation type="CASpringAnimation" damping="1000" mass="1" stiffness="100" mica_autorecalculatesDuration="1" keyPath="sublayerTransform" duration="1" fillMode="backwards">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.translation.y" targetId="#2">
+	    <animation type="CASpringAnimation" damping="1000" mass="1" stiffness="100" mica_autorecalculatesDuration="1" keyPath="transform.translation.y" duration="1" fillMode="backwards">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="contentsMultiplyColor" targetId="#2">
+	    <animation type="CASpringAnimation" damping="1000" mass="1" stiffness="100" mica_autorecalculatesDuration="1" keyPath="contentsMultiplyColor" duration="1" fillMode="backwards">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Sleep" toState="*">
+	<elements>
+	  <LKStateTransitionElement key="sublayerTransform" targetId="#1">
+	    <animation type="CASpringAnimation" damping="1000" mass="1" stiffness="100" mica_autorecalculatesDuration="1" keyPath="sublayerTransform" duration="1" fillMode="backwards">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="transform.translation.y" targetId="#2">
+	    <animation type="CASpringAnimation" damping="1000" mass="1" stiffness="100" mica_autorecalculatesDuration="1" keyPath="transform.translation.y" duration="1" fillMode="backwards">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement key="contentsMultiplyColor" targetId="#2">
+	    <animation type="CASpringAnimation" damping="1000" mass="1" stiffness="100" mica_autorecalculatesDuration="1" keyPath="contentsMultiplyColor" duration="1" fillMode="backwards">
+	      <animationType/>
+	    </animation>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+    </stateTransitions>
+  </CALayer>
+</caml>

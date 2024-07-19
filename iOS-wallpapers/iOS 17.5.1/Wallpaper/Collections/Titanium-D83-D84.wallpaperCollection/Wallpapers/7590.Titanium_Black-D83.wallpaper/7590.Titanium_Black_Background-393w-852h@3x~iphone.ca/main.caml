@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<caml xmlns="http://www.apple.com/CoreAnimation/1.0">
+  <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 3198 3198" contentsFormat="RGBA8" hidden="0" name="_BACKGROUND" position="2000 2000">
+    <sublayers>
+      <CALayer id="#2" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" anchorPoint="0 0" bounds="0 0 0 0" contentsFormat="RGBA8" name="_CENTER_BACKGROUND" position="1599 1599" transform="scale(0.9142, 0.9142, 1)">
+	<sublayers>
+	  <CALayer id="#3" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="645 1398 0 0" contentsFormat="RGBA8" hidden="0" name="SCRUB BACKGROUND IMAGES" position="0 0" speed="0">
+	    <sublayers>
+	      <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" anchorPoint="0 0" beginTime="-0.841645" bounds="0 0 1290 2796" contentsFormat="RGBA8" hidden="0" name="Lock Image" position="0 0">
+		<contents type="CGImage" relativePath="/assets/LOCK.HEIC" src="assets/LOCK.HEIC"/>
+	      </CALayer>
+	      <CALayer allowsEdgeAntialiasing="1" allowsGroupBlending="0" allowsGroupOpacity="1" anchorPoint="0 0" bounds="0 0 1290 2796" contentsFormat="RGBA8" hidden="0" name="AOD to Lock Two" position="0 0">
+		<contents type="CGImage" relativePath="/assets/AOD_to_LOCK_Two.HEIC" src="assets/AOD_to_LOCK_Two.HEIC"/>
+		<animations>
+		  <animation type="CAKeyframeAnimation" keyPath="opacity" beginTime="2" duration="2" fillMode="both" removedOnCompletion="0" timingFunction="easeInEaseOut">
+		    <keyTimes>
+		      <integer value="0"/>
+		      <integer value="1"/>
+		    </keyTimes>
+		    <timingFunctions/>
+		    <values>
+		      <integer value="1"/>
+		      <integer value="0"/>
+		    </values>
+		  </animation>
+		</animations>
+	      </CALayer>
+	      <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" anchorPoint="0 0" bounds="0 0 1290 2796" contentsFormat="RGBA8" hidden="0" name="AOD to Lock One" position="0 0">
+		<contents type="CGImage" relativePath="/assets/AOD_to_LOCK_One.HEIC" src="assets/AOD_to_LOCK_One.HEIC"/>
+		<animations>
+		  <animation type="CAKeyframeAnimation" keyPath="opacity" beginTime="1" duration="2" fillMode="both" removedOnCompletion="0" timingFunction="easeInEaseOut">
+		    <keyTimes>
+		      <integer value="0"/>
+		      <integer value="1"/>
+		    </keyTimes>
+		    <timingFunctions/>
+		    <values>
+		      <integer value="1"/>
+		      <integer value="0"/>
+		    </values>
+		  </animation>
+		</animations>
+	      </CALayer>
+	      <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" anchorPoint="0 0" bounds="0 0 1290 2796" contentsFormat="RGBA8" hidden="0" name="AOD Image" position="0 0">
+		<contents type="CGImage" relativePath="/assets/AOD.HEIC" src="assets/AOD.HEIC"/>
+		<animations>
+		  <animation type="CAKeyframeAnimation" keyPath="opacity" beginTime="1e-100" duration="2" fillMode="both" removedOnCompletion="0" timingFunction="easeInEaseOut">
+		    <keyTimes>
+		      <integer value="0"/>
+		      <integer value="1"/>
+		    </keyTimes>
+		    <timingFunctions/>
+		    <values>
+		      <integer value="1"/>
+		      <integer value="0"/>
+		    </values>
+		  </animation>
+		</animations>
+	      </CALayer>
+	      <CALayer allowsEdgeAntialiasing="1" allowsGroupOpacity="1" anchorPoint="0 0.5" bounds="0 0 300 1500" contentsFormat="RGBA8" hidden="0" name="Elongated Glow Mask.HEIC" opacity="0" position="588.519052838329 2003" transform="rotate(60deg) scale(0.20009, 0.999858, 1)">
+		<compositingFilter type="CAFilter" filter="plusL" name="plusL"/>
+		<contents type="CGImage" relativePath="/assets/Elongated%20Glow%20Mask.HEIC" src="assets/Elongated%20Glow%20Mask.HEIC"/>
+		<animations>
+		  <p key="animation-1" type="CAKeyframeAnimation" keyPath="transform.scale.x" beginTime="1e-100" duration="4" enabled="1" fillMode="both" removedOnCompletion="0">
+		    <timingFunctions>
+		      <CAMediaTimingFunction value="easeOut"/>
+		    </timingFunctions>
+		    <values>
+		      <real value="0.499989"/>
+		      <real value="3.99999"/>
+		    </values>
+		  </p>
+		  <animation type="CAKeyframeAnimation" keyPath="opacity" beginTime="1e-100" duration="4" enabled="1" fillMode="both" removedOnCompletion="0" timingFunction="easeInEaseOut">
+		    <timingFunctions>
+		      <CAMediaTimingFunction value="0.25 0 0.5 1"/>
+		      <CAMediaTimingFunction value="0.25 0 0.5 1"/>
+		    </timingFunctions>
+		    <values>
+		      <integer value="0"/>
+		      <real value="0.18"/>
+		      <integer value="0"/>
+		    </values>
+		  </animation>
+		</animations>
+	      </CALayer>
+	    </sublayers>
+	  </CALayer>
+	  <CALayer id="#4" allowsEdgeAntialiasing="1" allowsGroupBlending="0" allowsGroupOpacity="0" bounds="0 0 0 0" contentsFormat="RGBA8" hidden="0" name="SCRUB NOISE" position="0 0" speed="0">
+	    <sublayers>
+	      <CALayer allowsEdgeAntialiasing="1" allowsGroupBlending="0" allowsGroupOpacity="0" bounds="0 0 1290 2796" contentsFormat="RGBA8" hidden="0" name="Noise To Vibrancy" position="0 0">
+		<backgroundColor opacity="0" value="0 0 0"/>
+		<filters>
+		  <CAFilter filter="vibrantColorMatrix" name="vibrantColorMatrix" inputColorMatrix="matrix(3.789 2.235 0.226 0 -1.5 0.664 5.36 0.226 0 -1.5 0.664 2.235 3.351 0 -1.5 0.213 0.715 0.072 0 0)"/>
+		</filters>
+		<sublayers>
+		  <CALayer allowsEdgeAntialiasing="0" allowsGroupOpacity="1" bounds="0 0 1290 2796" contentsFormat="RGBA8" contentsOpaque="0" contentsRect="0.48 0.48 1 1" contentsScaling="repeat" hidden="0" name="Shifting Noise" position="645 1398">
+		    <backgroundColor opacity="0" value="0 0 0"/>
+		    <contents type="CGImage" relativePath="/assets/Seamless-High-Contrast-Alpha-Noise.png" src="assets/Seamless-High-Contrast-Alpha-Noise.png"/>
+		    <animations>
+		      <animation type="CAKeyframeAnimation" keyPath="contentsRect.origin.y" autoreverses="1" beginTime="-3" duration="1.5" enabled="1" fillMode="both" removedOnCompletion="0" repeatCount="inf">
+			<timingFunctions>
+			  <CAMediaTimingFunction value="easeInEaseOut"/>
+			</timingFunctions>
+			<values>
+			  <real value="0.51"/>
+			  <real value="0.5"/>
+			</values>
+		      </animation>
+		      <p key="animation-1" type="CAKeyframeAnimation" keyPath="contentsRect.origin.x" autoreverses="1" beginTime="-2.25" duration="1.5" enabled="1" fillMode="both" removedOnCompletion="0" repeatCount="inf">
+			<timingFunctions>
+			  <CAMediaTimingFunction value="easeInEaseOut"/>
+			</timingFunctions>
+			<values>
+			  <real value="0.5"/>
+			  <real value="0.51"/>
+			</values>
+		      </p>
+		    </animations>
+		  </CALayer>
+		</sublayers>
+		<animations>
+		  <animation type="CAKeyframeAnimation" keyPath="filters.vibrantColorMatrix.inputColorMatrix" beginTime="1e-100" duration="8" enabled="1" fillMode="both" removedOnCompletion="0">
+		    <keyTimes>
+		      <integer value="0"/>
+		      <real value="0.5"/>
+		      <integer value="1"/>
+		    </keyTimes>
+		    <timingFunctions>
+		      <CAMediaTimingFunction value="1 0 0.875 1"/>
+		      <CAMediaTimingFunction value="0.125 0 0 1"/>
+		    </timingFunctions>
+		    <values>
+		      <CAColorMatrix value="matrix(3.789 2.235 0.226 0 -1.5 0.664 5.36 0.226 0 -1.5 0.664 2.235 3.351 0 -1.5 0.213 0.715 0.072 0 0)"/>
+		      <CAColorMatrix value="matrix(1 0 0 0 0.3 0 1 0 0 0.3 0 0 1 0 0.3 0.213 0.715 0.072 0 0)"/>
+		      <CAColorMatrix value="matrix(3.789 2.235 0.226 0 -1.5 0.664 5.36 0.226 0 -1.5 0.664 2.235 3.351 0 -1.5 0.213 0.715 0.072 0 0)"/>
+		    </values>
+		  </animation>
+		</animations>
+	      </CALayer>
+	    </sublayers>
+	  </CALayer>
+	  <CALayer id="#1" allowsEdgeAntialiasing="1" allowsGroupOpacity="1" bounds="0 0 1292 2798" contentsFormat="RGBA8" hidden="0" name="HOME.HEIC" opacity="0" position="0 0">
+	    <contents type="CGImage" relativePath="/assets/HOME.HEIC" src="assets/HOME.HEIC"/>
+	  </CALayer>
+	</sublayers>
+      </CALayer>
+    </sublayers>
+    <states>
+      <LKState name="Sleep PortraitUp">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="transform.rotation.z">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="timeOffset">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#4" keyPath="timeOffset">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Lock PortraitUp">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="transform.rotation.z">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="timeOffset">
+	    <value type="integer" value="4"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#4" keyPath="timeOffset">
+	    <value type="integer" value="4"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Home PortraitUp">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="opacity">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="transform.rotation.z">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="timeOffset">
+	    <value type="integer" value="4"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#4" keyPath="timeOffset">
+	    <value type="integer" value="8"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Sleep LandscapeLeft">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="transform.rotation.z">
+	    <value type="real" value="-1.5708"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="timeOffset">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#4" keyPath="timeOffset">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Lock LandscapeLeft">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="transform.rotation.z">
+	    <value type="real" value="-1.5708"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="timeOffset">
+	    <value type="integer" value="4"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#4" keyPath="timeOffset">
+	    <value type="integer" value="4"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Home LandscapeLeft">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="opacity">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="transform.rotation.z">
+	    <value type="real" value="-1.5708"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="timeOffset">
+	    <value type="integer" value="4"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#4" keyPath="timeOffset">
+	    <value type="integer" value="8"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Sleep PortraitDown">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="transform.rotation.z">
+	    <value type="real" value="3.14159"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="timeOffset">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#4" keyPath="timeOffset">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Lock PortraitDown">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="transform.rotation.z">
+	    <value type="real" value="3.14159"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="timeOffset">
+	    <value type="integer" value="4"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#4" keyPath="timeOffset">
+	    <value type="integer" value="4"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Home PortraitDown">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="opacity">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="transform.rotation.z">
+	    <value type="real" value="3.14159"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="timeOffset">
+	    <value type="integer" value="4"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#4" keyPath="timeOffset">
+	    <value type="integer" value="8"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Sleep LandscapeRight">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="transform.rotation.z">
+	    <value type="real" value="1.5708"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="timeOffset">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#4" keyPath="timeOffset">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Lock LandscapeRight">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="opacity">
+	    <value type="integer" value="0"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="transform.rotation.z">
+	    <value type="real" value="1.5708"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="timeOffset">
+	    <value type="integer" value="4"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#4" keyPath="timeOffset">
+	    <value type="integer" value="4"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+      <LKState name="Home LandscapeRight">
+	<elements>
+	  <LKStateSetValue targetId="#1" keyPath="opacity">
+	    <value type="integer" value="1"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#2" keyPath="transform.rotation.z">
+	    <value type="real" value="1.5708"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#3" keyPath="timeOffset">
+	    <value type="integer" value="4"/>
+	  </LKStateSetValue>
+	  <LKStateSetValue targetId="#4" keyPath="timeOffset">
+	    <value type="integer" value="8"/>
+	  </LKStateSetValue>
+	</elements>
+      </LKState>
+    </states>
+    <stateTransitions>
+      <LKStateTransition fromState="*" toState="Sleep PortraitUp">
+	<elements>
+	  <LKStateTransitionElement id="#5" key="opacity" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="opacity" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#6" key="transform.rotation.z" targetId="#2">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="transform.rotation.z" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#7" key="timeOffset" targetId="#3">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#8" key="timeOffset" targetId="#4">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Sleep PortraitUp" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#5"/>
+	  <LKStateTransitionElement object="#6"/>
+	  <LKStateTransitionElement object="#7"/>
+	  <LKStateTransitionElement object="#8"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Lock PortraitUp">
+	<elements>
+	  <LKStateTransitionElement id="#9" key="opacity" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="opacity" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#10" key="transform.rotation.z" targetId="#2">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="transform.rotation.z" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#11" key="timeOffset" targetId="#3">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#12" key="timeOffset" targetId="#4">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Lock PortraitUp" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#9"/>
+	  <LKStateTransitionElement object="#10"/>
+	  <LKStateTransitionElement object="#11"/>
+	  <LKStateTransitionElement object="#12"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Home PortraitUp">
+	<elements>
+	  <LKStateTransitionElement id="#13" key="opacity" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="opacity" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#14" key="transform.rotation.z" targetId="#2">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="transform.rotation.z" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#15" key="timeOffset" targetId="#3">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#16" key="timeOffset" targetId="#4">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Home PortraitUp" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#13"/>
+	  <LKStateTransitionElement object="#14"/>
+	  <LKStateTransitionElement object="#15"/>
+	  <LKStateTransitionElement object="#16"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Sleep LandscapeLeft">
+	<elements>
+	  <LKStateTransitionElement id="#17" key="opacity" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="opacity" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#18" key="transform.rotation.z" targetId="#2">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="transform.rotation.z" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#19" key="timeOffset" targetId="#3">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#20" key="timeOffset" targetId="#4">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Sleep LandscapeLeft" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#17"/>
+	  <LKStateTransitionElement object="#18"/>
+	  <LKStateTransitionElement object="#19"/>
+	  <LKStateTransitionElement object="#20"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Lock LandscapeLeft">
+	<elements>
+	  <LKStateTransitionElement id="#21" key="opacity" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="opacity" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#22" key="transform.rotation.z" targetId="#2">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="transform.rotation.z" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#23" key="timeOffset" targetId="#3">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#24" key="timeOffset" targetId="#4">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Lock LandscapeLeft" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#21"/>
+	  <LKStateTransitionElement object="#22"/>
+	  <LKStateTransitionElement object="#23"/>
+	  <LKStateTransitionElement object="#24"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Home LandscapeLeft">
+	<elements>
+	  <LKStateTransitionElement id="#25" key="opacity" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="opacity" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#26" key="transform.rotation.z" targetId="#2">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="transform.rotation.z" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#27" key="timeOffset" targetId="#3">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#28" key="timeOffset" targetId="#4">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Home LandscapeLeft" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#25"/>
+	  <LKStateTransitionElement object="#26"/>
+	  <LKStateTransitionElement object="#27"/>
+	  <LKStateTransitionElement object="#28"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Sleep PortraitDown">
+	<elements>
+	  <LKStateTransitionElement id="#29" key="opacity" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="opacity" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#30" key="transform.rotation.z" targetId="#2">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="transform.rotation.z" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#31" key="timeOffset" targetId="#3">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#32" key="timeOffset" targetId="#4">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Sleep PortraitDown" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#29"/>
+	  <LKStateTransitionElement object="#30"/>
+	  <LKStateTransitionElement object="#31"/>
+	  <LKStateTransitionElement object="#32"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Lock PortraitDown">
+	<elements>
+	  <LKStateTransitionElement id="#33" key="opacity" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="opacity" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#34" key="transform.rotation.z" targetId="#2">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="transform.rotation.z" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#35" key="timeOffset" targetId="#3">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#36" key="timeOffset" targetId="#4">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Lock PortraitDown" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#33"/>
+	  <LKStateTransitionElement object="#34"/>
+	  <LKStateTransitionElement object="#35"/>
+	  <LKStateTransitionElement object="#36"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Home PortraitDown">
+	<elements>
+	  <LKStateTransitionElement id="#37" key="opacity" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="opacity" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#38" key="transform.rotation.z" targetId="#2">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="transform.rotation.z" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#39" key="timeOffset" targetId="#3">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#40" key="timeOffset" targetId="#4">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Home PortraitDown" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#37"/>
+	  <LKStateTransitionElement object="#38"/>
+	  <LKStateTransitionElement object="#39"/>
+	  <LKStateTransitionElement object="#40"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Sleep LandscapeRight">
+	<elements>
+	  <LKStateTransitionElement id="#41" key="opacity" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="opacity" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#42" key="transform.rotation.z" targetId="#2">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="transform.rotation.z" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#43" key="timeOffset" targetId="#3">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#44" key="timeOffset" targetId="#4">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Sleep LandscapeRight" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#41"/>
+	  <LKStateTransitionElement object="#42"/>
+	  <LKStateTransitionElement object="#43"/>
+	  <LKStateTransitionElement object="#44"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Lock LandscapeRight">
+	<elements>
+	  <LKStateTransitionElement id="#45" key="opacity" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="opacity" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#46" key="transform.rotation.z" targetId="#2">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="transform.rotation.z" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#47" key="timeOffset" targetId="#3">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#48" key="timeOffset" targetId="#4">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Lock LandscapeRight" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#45"/>
+	  <LKStateTransitionElement object="#46"/>
+	  <LKStateTransitionElement object="#47"/>
+	  <LKStateTransitionElement object="#48"/>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="*" toState="Home LandscapeRight">
+	<elements>
+	  <LKStateTransitionElement id="#49" key="opacity" targetId="#1">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="opacity" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#50" key="transform.rotation.z" targetId="#2">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="transform.rotation.z" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#51" key="timeOffset" targetId="#3">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	  <LKStateTransitionElement id="#52" key="timeOffset" targetId="#4">
+	    <animation type="CASpringAnimation" damping="10000" mass="1" stiffness="16" keyPath="timeOffset" duration="4.8" timingFunction="linear"/>
+	  </LKStateTransitionElement>
+	</elements>
+      </LKStateTransition>
+      <LKStateTransition fromState="Home LandscapeRight" toState="*">
+	<elements>
+	  <LKStateTransitionElement object="#49"/>
+	  <LKStateTransitionElement object="#50"/>
+	  <LKStateTransitionElement object="#51"/>
+	  <LKStateTransitionElement object="#52"/>
+	</elements>
+      </LKStateTransition>
+    </stateTransitions>
+  </CALayer>
+</caml>
